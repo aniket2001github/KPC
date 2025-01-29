@@ -1250,6 +1250,25 @@
         </div>
     </div>
     <!-- End Partner Client -->
+    <script>
+        function calculate() {
+            // Get values from input fields
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+
+            // Check if values are valid
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+
+            // Perform calculation (e.g., addition)
+            let sum = num1 + num2;
+
+            // Show result in a popup
+            alert("The result is: " + sum);
+        }
+    </script>
 
 
     <!-- Start Pricing Calculator -->
